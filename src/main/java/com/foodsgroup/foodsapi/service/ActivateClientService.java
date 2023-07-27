@@ -1,6 +1,4 @@
 package com.foodsgroup.foodsapi.service;
-
-import com.fasterxml.jackson.annotation.JacksonInject;
 import com.foodsgroup.foodsapi.model.ClientModel;
 import com.foodsgroup.foodsapi.notification.EmailNotification;
 import com.foodsgroup.foodsapi.notification.Notificator;

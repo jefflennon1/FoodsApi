@@ -2,8 +2,10 @@ package com.foodsgroup.foodsapi.notification;
 
 import com.foodsgroup.foodsapi.model.ClientModel;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
-@Primary
+
+@Profile("prod")
 @Component
 public class EmailNotification implements Notificator {
 

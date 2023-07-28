@@ -33,7 +33,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <version>3.0.4</version>
-            <scope>runtime</scope>
+<!--            <scope>runtime</scope>-->
             <optional>true</optional>
         </dependency>
         <dependency>

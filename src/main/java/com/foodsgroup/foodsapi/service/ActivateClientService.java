@@ -5,11 +5,12 @@ import com.foodsgroup.foodsapi.notification.Notificator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.inject.Inject;
+
 @Component
 public class ActivateClientService {
 
-
-    @Autowired(required = false)
+    @Inject
     private Notificator notificator;
 
     public ActivateClientService(EmailNotification notificator) {
@@ -18,7 +19,7 @@ public class ActivateClientService {
 
     public  void activate(ClientModel client){
         client.activateClient();
-        notificator.notificate(client, "Your register is activate on system!");
+        notificator.notificate(client, "Your register is activate on system!!");
 
     }
 }
